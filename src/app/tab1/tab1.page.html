@@ -1,0 +1,53 @@
+<!--<ion-header>
+  <ion-toolbar color="danger">
+    <ion-title>
+        <ion-grid>
+            <ion-row class="ion-align-items-center ion-justify-content-center">
+              <ion-col class="ion-float-left">
+                <div>
+                </div>
+              </ion-col>
+              <ion-col class="ion-float-right">
+                <div>  
+                </div>
+              </ion-col>
+            </ion-row>
+          </ion-grid> 
+    </ion-title>
+   <ion-buttons slot="end">
+    <ion-button type ="button" id="logado" *ngIf="show1" (click)="dashboard()" class="small" size="small" color="primary" fill="solid">Meu Painel</ion-button> 
+    <ion-button type ="button" id="deslogado" *ngIf="show2" (click)="presentAlert()" class="small" size="small" color="primary" fill="solid">Meu Painel</ion-button>
+    </ion-buttons>  
+  </ion-toolbar>
+</ion-header> -->
+
+<ion-content>
+       <div id="front"><img src="./../../assets/drawable-land-ldpi-screen.png" alt=""></div> 
+    <ion-grid>
+      <ion-row class="ion-align-items-center ion-justify-content-center">
+        <ion-col ion-col class="ion-align-self-center" size-md="6" size-lg="5" size-xs="12">
+          <div class="ion-text-center">
+            <h4>Entrar no Aplicativo</h4>
+          </div>
+          <div class="ion-padding">
+            <ion-item>
+              <ion-label position="floating">Email</ion-label>
+              <ion-input type="text" [(ngModel)]="email"></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-label position="floating">Senha</ion-label>
+                <ion-input  [(ngModel)]="senha" [type]="passwordType"></ion-input>
+                  <ion-icon [name]="passwordShown === true ? 'eye':'eye-off'" slot="end" (click)="mostrarSenha()"></ion-icon>
+            </ion-item>
+          </div>
+    
+          <div class="ion-padding">
+            <ion-button size="large" color="americanas" (click)="login()" expand="block">Entrar</ion-button>
+            <p routerLink="/recupera-senha">Esqueci a senha</p>
+            <p routerLink="/addUsuario">Não sou cadastrado</p>
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-content>
+  

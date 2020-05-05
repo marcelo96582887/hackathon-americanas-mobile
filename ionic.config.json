@@ -1,0 +1,7 @@
+{
+  "name": "desafioAmericanas",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

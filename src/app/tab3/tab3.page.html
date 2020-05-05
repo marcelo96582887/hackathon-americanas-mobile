@@ -1,0 +1,59 @@
+<ion-header>
+  <ion-toolbar color="americanas">
+      <img class="title" src="./../../assets/logoAmericanas.png" alt="">
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <!-- List of Text Items -->
+  <ion-list color="americanas">
+    <ion-title><p>Dúvidas Frequentes</p></ion-title>
+    <ion-item (click)=" hide1() ">
+      <ion-label>
+        <p>O que é o Desafio Americanas?</p>
+      </ion-label>
+      <ion-text>
+        <div class="ajustada" [hidden]="hideMe1">É um serviço que permite a consulta de produtos nas prateleiras das Lojas Americanas através da leitura do QR CODE.</div>
+      </ion-text>
+    </ion-item>
+    <ion-item (click)=" hide2() ">
+      <ion-label>
+        <p>O que é QR CODE?</p> 
+      </ion-label>
+      <ion-text>
+        <div class="ajustada" [hidden]="hideMe2">QR code, ou código QR, é a sigla de "Quick Response" que significa resposta rápida. QR code é um código de barras, que foi criado em 1994, e possui esse nome pois dá a capacidade de ser interpretado rapidamente pelas pessoas.</div>
+      </ion-text>
+    </ion-item>
+    <ion-item (click)=" hide3() ">
+      <ion-label>
+        <p>Como posso me habilitar para este aplicativo?</p>
+      </ion-label>
+      <ion-text>
+        <div class="ajustada" [hidden]="hideMe3">Basta cadastrar seu e-mail, celular e senha para acessar o app.</div>
+      </ion-text>
+    </ion-item>
+    <ion-item (click)=" hide4() ">
+      <ion-label>
+        <p>Como se utiliza o leitor de QR CODE?</p>
+      </ion-label>
+      <ion-text>
+        <div class="ajustada" [hidden]="hideMe4">Após entrar no aplicativo escolha a opção CONSULTAR PRODUTO. Depois basta apontar a câmera para a etiqueta da prateleira e aparecerão todas as informações sobre o produto escolhido</div>
+      </ion-text>
+    </ion-item>
+    <ion-item (click)=" hide5() ">
+      <ion-label>
+        <p>Caso eu tenha dúvidas ou deseje reclamar?</p>
+      </ion-label>
+      <ion-text>
+        <div class="ajustada" [hidden]="hideMe5">Se desejar, poderá entrar em contato pela página de contato para maiores esclarecimentos.</div>
+      </ion-text>
+    </ion-item>
+    <ion-item (click)=" hide6() ">
+      <ion-label>
+        <p>E seu quiser cancelar a minha assinatura?</p>
+      </ion-label>
+      <ion-text>
+        <div class="ajustada" [hidden]="hideMe6">A qualquer momento você poderá cancelar a sua assinatura efetuando escolhendo "cancelar".</div>
+      </ion-text>
+    </ion-item>
+  </ion-list>
+</ion-content>
